@@ -4,48 +4,69 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Connexion - NEXORA</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-connexion">
 
-    <h1>NEXORA</h1>
+    <!-- HEADER -->
+    <header class="connexion-header">
 
-    <nav>
-        <a href="index.html">Accueil</a> |
-        <a href="index.html#mangas">Mangas</a> |
-        <a href="index.html#jeux">Jeux vidéo</a>
-    </nav>
+        <h1>NEXORA</h1>
 
-    <h2>Connexion</h2>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="index.html#mangas">Mangas</a>
+            <a href="index.html#jeux">Jeux vidéo</a>
+        </nav>
 
-    <p>Connectez-vous à votre compte NEXORA.</p>
+    </header>
 
-    <form action="#" method="post">
 
-        <p>
-            <label>Adresse mail ou téléphone :</label>
-            <br>
-            <input type="text" name="identifiant" required>
-        </p>
+    <!-- CONNEXION -->
+    <main class="connexion-main">
 
-        <p>
-            <label>Mot de passe :</label>
-            <br>
-            <input type="password" name="motdepasse" required>
-        </p>
+        <div class="connexion-titre">
+            <h2>Connexion</h2>
+            <p>Connectez-vous à votre compte NEXORA.</p>
+        </div>
 
-        <p>
-            <a href="#">Mot de passe oublié ?</a>
-        </p>
+        <form action="#" method="post">
 
-        <input type="submit" value="Se connecter">
+            <p>
+                <label for="identifiant">Adresse mail ou téléphone :</label>
+                <input type="text" id="identifiant" name="identifiant" required>
+            </p>
 
-    </form>
+            <p>
+                <label for="motdepasse">Mot de passe :</label>
+                <input type="password" id="motdepasse" name="motdepasse" required>
+            </p>
 
-    <p>Vous n'avez pas de compte ?</p>
-    <a href="inscription.html">Créer un compte</a>
+            <p>
+                <a href="#">Mot de passe oublié ?</a>
+            </p>
+
+            <input type="submit" value="Se connecter">
+
+        </form>
+
+        <div class="creation-compte">
+            <p>Vous n'avez pas de compte ?</p>
+            <a href="inscription.html">Créer un compte</a>
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="connexion-footer">
+        <p>© 2026 NEXORA - Jouez. Lisez. Explorez.</p>
+    </footer>
 
 </body>
 </html>

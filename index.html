@@ -1,128 +1,283 @@
+
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>NEXORA - Mangas et jeux vidéo</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <title>NEXORA - Mangas et jeux vidéo</title>
-</head>
 
 <body>
 
-    <h1>NEXORA</h1>
-    <p>Bienvenue sur notre site de mangas et de jeux vidéo.</p>
+    <!-- HEADER -->
+    <header class="header" id="accueil">
 
-    <nav>
-        <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#mangas">Mangas</a></li>
-            <li><a href="#jeux">Jeux vidéo</a></li>
-            <li><a href="/connexion.html">Connexion</a></li>
-    </nav>
-            
-        
+        <div class="logo">
+            <span class="logo-n">N</span>
+            <h1>NEXORA</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#accueil" class="active">
+                        <span>⌂</span> Accueil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#mangas">
+                        <span>🎮</span> Mangas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#jeux">
+                        <span>🎮</span> Jeux vidéo
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <a href="#" aria-label="Rechercher">⌕</a>
+            <span class="separateur"></span>
+            <a href="connexion.html" aria-label="Connexion">●</a>
+        </div>
+
+    </header>
 
 
-       
-    
+    <!-- BANNIERE -->
+    <section class="banniere">
 
-    <hr>
+        <div class="texte-banniere">
 
-    <h2 id="accueil">Accueil</h2>
-    <p>Découvrez notre sélection de mangas et de jeux vidéo à petits prix.</p>
+            <h2>
+                Nos <span>Mangas</span> &<br>
+                <span>Jeux Vidéo</span>
+            </h2>
 
-    <h2 id="mangas">Nos mangas</h2>
+            <p>
+                Découvrez notre sélection de mangas et de jeux vidéo sur NEXORA.
+            </p>
 
-    <table border="1">
-        <tr>
-            <th>Image</th>
-            <th>Nom</th>
-            <th>Description</th>
-            <th>Prix</th>
-        </tr>
+            <a href="#mangas" class="bouton">
+                Explorer <span>❯</span>
+            </a>
 
-        <tr>
-            <td><img src="one.piece.png" alt="One Piece" width="100"></td>
-            <td>One Piece</td>
-            <td>L'histoire de Luffy et de son équipage.</td>
-            <td>7,50 €</td>
-        </tr>
+        </div>
 
-        <tr>
-            <td><img src="naruto.jpg" alt="Naruto" width="100"></td>
-            <td>Naruto</td>
-            <td>L'histoire d'un jeune ninja qui veut devenir Hokage.</td>
-            <td>7,00 €</td>
-        </tr>
+    </section>
 
-        <tr>
-            <td><img src="dragon.svg" alt="Dragon Ball" width="100"></td>
-            <td>Dragon Ball</td>
-            <td>Les aventures de Son Goku.</td>
-            <td>6,50 €</td>
-        </tr>
 
-        <tr>
-            <td><img src="Demon.png" alt="Demon Slayer" width="100"></td>
-            <td>Demon Slayer</td>
-            <td>Tanjiro combat les démons pour sauver sa sœur.</td>
-            <td>7,50 €</td>
-        </tr>
-    </table>
+    <!-- MANGAS -->
+    <section class="catalogue" id="mangas">
 
-    <h2 id="jeux">Nos jeux vidéo</h2>
+        <div class="contenu-catalogue">
 
-    <table border="1">
-        <tr>
-            <th>Image</th>
-            <th>Nom</th>
-            <th>Description</th>
-            <th>Prix</th>
-        </tr>
+            <div class="illustration manga">
+                <img src="Luffy.png" alt="Illustration de Luffy">
+            </div>
 
-        <tr>
-            <td><img src="GTA.webp" alt="GTA V" width="100"></td>
-            <td>GTA V</td>
-            <td>Un jeu d'action dans une grande ville.</td>
-            <td>25 €</td>
-        </tr>
+            <div class="table-container">
 
-        <tr>
-            <td><img src="Minecraft-Logo-2013.png" alt="Minecraft" width="100"></td>
-            <td>Minecraft</td>
-            <td>Un jeu où l'on peut construire et explorer.</td>
-            <td>20 €</td>
-        </tr>
+                <div class="titre-section">
 
-        <tr>
-            <td><img src="FC-26.webp" alt="EA Sports FC" width="100"></td>
-            <td>EA Sports FC</td>
-            <td>Un jeu de football.</td>
-            <td>40 €</td>
-        </tr>
+                    <h2>
+                        <span class="icone-section">♧</span>
+                        Nos <span>mangas</span>
+                    </h2>
 
-        <tr>
-            <td><img src="Zelda_Logo.svg.webp" alt="Zelda" width="100"></td>
-            <td>Zelda</td>
-            <td>Un jeu d'aventure et d'exploration.</td>
-            <td>45 €</td>
-        </tr>
-    </table>
+                    <a href="#mangas">Voir plus →</a>
 
-    <h2 id="contact">Contact</h2>
-    <p>Pour toute question, contactez-nous à : nexora@gmail.com</p>
+                </div>
 
-</body>
-</html>
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Nom</th>
+                            <th>Description</th>
+                            <th>Prix</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <img src="one.piece.png" alt="One Piece">
+                            </td>
+                            <td>One Piece</td>
+                            <td>L'histoire de Luffy et de son équipage.</td>
+                            <td><span class="prix">7,50 €</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="naruto.jpg" alt="Naruto">
+                            </td>
+                            <td>Naruto</td>
+                            <td>L'histoire d'un jeune ninja qui veut devenir Hokage.</td>
+                            <td><span class="prix">7,00 €</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="dragon.svg" alt="Dragon Ball">
+                            </td>
+                            <td>Dragon Ball</td>
+                            <td>Les aventures de Son Goku.</td>
+                            <td><span class="prix">6,50 €</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="Demon.png" alt="Demon Slayer">
+                            </td>
+                            <td>Demon Slayer</td>
+                            <td>Tanjiro combat les démons pour sauver sa sœur.</td>
+                            <td><span class="prix">7,50 €</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- JEUX VIDEO -->
+    <section class="catalogue" id="jeux">
+
+        <div class="contenu-catalogue">
+
+            <div class="illustration jeux">
+                <img src="Steve et les mobs.png" alt="Illustration Minecraft">
+            </div>
+
+            <div class="table-container">
+
+                <div class="titre-section">
+
+                    <h2>
+                        <span class="icone-section">🎮</span>
+                        Nos <span>jeux vidéo</span>
+                    </h2>
+
+                    <a href="#jeux">Voir plus →</a>
+
+                </div>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Nom</th>
+                            <th>Description</th>
+                            <th>Prix</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <img src="GTA.webp" alt="GTA V">
+                            </td>
+                            <td>GTA V</td>
+                            <td>Un monde ouvert rempli d'action.</td>
+                            <td><span class="prix">25 €</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="Minecraft-Logo-2013.png" alt="Minecraft">
+                            </td>
+                            <td>Minecraft</td>
+                            <td>Construisez, explorez et survivez.</td>
+                            <td><span class="prix">20 €</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="FC-26.webp" alt="EA Sports FC">
+                            </td>
+                            <td>EA Sports FC</td>
+                            <td>Le football comme vous l'aimez.</td>
+                            <td><span class="prix">60 €</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="Zelda_Logo.svg.webp" alt="Zelda">
+                            </td>
+                            <td>Zelda</td>
+                            <td>Une aventure légendaire vous attend.</td>
+                            <td><span class="prix">65 €</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+
+            <div class="footer-identite">
+                <span class="logo-n">N</span>
+
+                <div>
+                    <h2>NEXORA</h2>
+                    <p>Jouez. Lisez. Explorez.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="footer-reseaux">
+
+            <a href="#" aria-label="Discord">◉</a>
+            <a href="#" aria-label="YouTube">▶</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="Instagram">◎</a>
+
+        </div>
+
+
+        <div class="footer-contact">
+
+            <a href="mailto:nexora@gmail.com">✉ Contact</a>
+
+            <p>
+                Pour toute question, contactez-nous à :
+                nexora@gmail.com
+            </p>
+
+        </div>
+
+    </footer>
 
 </body>
 </html>
