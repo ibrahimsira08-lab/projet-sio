@@ -1,0 +1,6 @@
+PERSONNE DU PROJET 
+1-Ibrahim Toure
+2-Chris Bilé
+Tache:
+1-HTml page 1 et 2 +debut css Ibrahim
+2-masquette ,Rajout html et css upgrade Chris 
